@@ -26,6 +26,9 @@ useEffect(() => {
         const sortedMovies=_.orderBy(filterMovie, [sort.by],[sort.order])
         setFilterMovie(sortedMovies)
      }
+
+
+     
     }, [sort])
     
 
