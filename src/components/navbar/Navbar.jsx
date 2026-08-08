@@ -1,18 +1,94 @@
 import React from 'react'
 import './Navbar.css'
 
+import { Clapperboard, } from "lucide-react"
+import { Link } from 'react-router-dom'
+// import { useMovieContext } from "../context/MovieContext";
+import { useMovieContext } from "../../context/MovieContext";
 const Navbar = () => {
+
+      // const { movieCount } = useMovieContext();
+ const { movieCount, addMovies } = useMovieContext();
+
+
+      
+      
   return (
+
     <nav className='navbar'>
-<h1>MovieManiac</h1>
+<Link to='/'><h1 className='nav'>MovieManiac</h1></Link>
 
 <div className="navbar-links">
-    <a href="">Popular</a>
+    {/* <a href="">Popular</a>
      <a href="">Top rated</a>
-      <a href="">upccming</a>
+      <a href="">upcoming</a> */}
+      <Link to="/Addmovie" className="movie-icon">
+  <Clapperboard size={40} />
+  <span className="count">
+      {/* {movieCount > 0 && (
+      <span className="movie-count">{movieCount}</span>
+    )}
+  */}
+  {movieCount}
+  </span>
+</Link>
 </div>
+
     </nav>
   )
 }
 
 export default Navbar
+
+
+// import React from "react";
+// import "./Navbar.css";
+
+// import {
+//   Clapperboard
+// } from "lucide-react";
+
+// import {
+//   Link
+// } from "react-router-dom";
+
+// import {
+//   useMovieContext
+// } from "../context/MovieContext";
+
+// const Navbar = () => {
+
+//   const { movieCount } = useMovieContext();
+
+//   return (
+//     <nav className="navbar">
+
+//       <Link
+//         to="/"
+//         className="nav"
+//       >
+//         MovieManiac
+//       </Link>
+
+//       <Link
+//         to="/Addmovie"
+//         className="movie-link"
+//       >
+
+//         <Clapperboard size={25} />
+
+//         {movieCount > 0 && (
+//           <span className="movie-count">
+//             {movieCount}
+//           </span>
+//         )}
+
+//       </Link>
+
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+

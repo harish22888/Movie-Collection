@@ -1,0 +1,166 @@
+/* .add-movie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    height: 300px;
+    width: 900px;
+    border: 1px solid wheat;
+    overflow: hidden;
+    margin: auto;
+    padding: 30px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+   border-radius: 20px;
+
+
+}
+.add-movie:hover{
+    border: 2px solid yellow;
+}
+
+.movie-poster-add{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.remove-btn{
+    width: 80px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+  
+}
+.remove-btn:hover{
+    color: red;
+    background-color: rgb(182, 235, 7);
+} */
+ .add-movie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 300px;
+  width: 900px;
+
+  border: 1px solid wheat;
+  overflow: hidden;
+
+  margin: 20px auto;
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-sizing: border-box;
+}
+
+.add-movie:hover {
+  border: 2px solid yellow;
+}
+
+.movie-poster-add {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 200px;
+  width: 200px;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+}
+
+.remove-btn {
+  width: 80px;
+  height: 30px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  border-radius: 20px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: red;
+  background-color: rgb(182, 235, 7);
+}
+
+
+/* ========================= */
+/*       TABLET              */
+/* ========================= */
+
+@media (max-width: 950px) {
+  .add-movie {
+    width: 90%;
+    height: 280px;
+    padding: 25px;
+  }
+
+  .movie-poster-add {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* ========================= */
+/*       MOBILE              */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .add-movie {
+    width: 90%;
+    height: auto;
+
+    padding: 20px;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .movie-poster-add {
+    width: 150px;
+    height: 200px;
+  }
+
+  .remove-btn {
+    width: 100px;
+    height: 32px;
+  }
+}
+
+
+/* ========================= */
+/*      SMALL MOBILE         */
+/* ========================= */
+
+@media (max-width: 400px) {
+  .add-movie {
+    width: 92%;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .movie-poster-add {
+    width: 130px;
+    height: 180px;
+  }
+
+  .remove-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
+}
