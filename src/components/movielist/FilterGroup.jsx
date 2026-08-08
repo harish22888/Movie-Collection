@@ -7,7 +7,7 @@ const FilterGroup = ({minRating,onRatingClick,ratings}) => {
     key={rate}
     onClick={()=>{
         onRatingClick(rate)
-    }} >{rate}+ star</li>)}
+    }} >{rate}⭐+</li>)}
     
   
 </ul>
@@ -16,3 +16,4 @@ const FilterGroup = ({minRating,onRatingClick,ratings}) => {
 }
 
 export default FilterGroup
+

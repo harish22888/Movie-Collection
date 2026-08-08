@@ -37,7 +37,7 @@ useEffect(() => {
 
         )
     const data= await response.json();
-// console.log(data);
+console.log(data);
 setMovies(data.results)
 setFilterMovie(data.results)
     }
@@ -62,13 +62,13 @@ setFilterMovie(data.results)
         })
 
     })
-    // console.log(sort);
+    console.log(sort);
     
 
     return (
    <section className="movie-list">
     <header className='movie-list-header'>
-        <h2 className="movie-list-heading">Popular</h2>
+        <h2 className="movie-list-heading">Popular🔥</h2>
         {/* fs=filter and sorting */}
         <div className="movie-list-fs">
 <FilterGroup minRating={minRating}
@@ -77,9 +77,9 @@ setFilterMovie(data.results)
  />
 
 <select name="by" id="" onChange={handleSort} value={sort.by} className="movie-sorting">
-    <option value="default">sorting</option>
-    <option value="release_date">date</option>
-    <option value="vote_average">ratte</option>
+    <option value="default">Sorting</option>
+    <option value="release_date">Date</option>
+    <option value="vote_average">Rate</option>
 </select>
 <select name="order" id="" onChange={handleSort} value={sort.order} className="movie-sorting">
     <option value="asc">Ascending</option>
@@ -102,3 +102,5 @@ setFilterMovie(data.results)
 }
 
 export default MoviList
+
+

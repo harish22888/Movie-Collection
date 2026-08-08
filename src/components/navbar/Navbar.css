@@ -4,11 +4,28 @@
     justify-content: space-between;
     padding: 0 30px;
     border-bottom: 1px solid wheat;
+    text-decoration: none;
 }
-.navbar>h1{
-    font-size: 30px;
-    color: yellow;
+
+.nav {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4757;
+  
+
+
 }
+.nav h1 {
+  margin: 0;
+  text-decoration: none;
+}
+
+.nav:hover {
+
+  transform: scale(1.02);
+}
+
+
 .navbar-links{
     display: flex;
     align-items: center;
@@ -22,4 +39,43 @@
     color: aliceblue;
     padding: 0 15px;
    text-decoration: none;
+}
+
+.navbar .counter{
+    height: 50px;
+    width: 50px;
+    color: rgb(244, 244, 148);
+margin-right: 60px;
+
+}
+.counter:hover{
+
+    color: yellow;
+}
+
+ .counter{
+    position: relative;
+    
+}
+
+
+.nav{
+    text-decoration: none;
+    color: wheat;
+}
+
+
+
+.count{
+    margin-top: -45px;
+    margin-left: -10px;
+    width: 15px;
+    height: 15px;
+   border: 12px solid red;
+    color: azure;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
