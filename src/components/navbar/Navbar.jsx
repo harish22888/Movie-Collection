@@ -4,7 +4,7 @@ import './Navbar.css'
 import { Clapperboard, } from "lucide-react"
 import { Link } from 'react-router-dom'
 
-import { useMovieContext } from "../../context/Moviecontext";
+import { useMovieContext } from "../../context/MovieContext";
 const Navbar = () => {
 
       // const { movieCount } = useMovieContext();

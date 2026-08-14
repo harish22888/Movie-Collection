@@ -4,7 +4,7 @@
 import React from "react";
 import "./MovieCard.css";
 import { Link } from "react-router-dom";
-import { useMovieContext } from "../../context/Moviecontext";
+import { useMovieContext } from "../../context/MovieContext";
 
 const MovieCard = ({ movie }) => {
   const { addMovie, removeMovie } = useMovieContext();
