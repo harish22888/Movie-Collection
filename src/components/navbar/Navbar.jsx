@@ -3,8 +3,8 @@ import './Navbar.css'
 
 import { Clapperboard, } from "lucide-react"
 import { Link } from 'react-router-dom'
-// import { useMovieContext } from "../context/MovieContext";
-import { useMovieContext } from "../../context/MovieContext";
+
+import { useMovieContext } from "../../context/Moviecontext";
 const Navbar = () => {
 
       // const { movieCount } = useMovieContext();
@@ -39,56 +39,5 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-// import React from "react";
-// import "./Navbar.css";
-
-// import {
-//   Clapperboard
-// } from "lucide-react";
-
-// import {
-//   Link
-// } from "react-router-dom";
-
-// import {
-//   useMovieContext
-// } from "../context/MovieContext";
-
-// const Navbar = () => {
-
-//   const { movieCount } = useMovieContext();
-
-//   return (
-//     <nav className="navbar">
-
-//       <Link
-//         to="/"
-//         className="nav"
-//       >
-//         MovieManiac
-//       </Link>
-
-//       <Link
-//         to="/Addmovie"
-//         className="movie-link"
-//       >
-
-//         <Clapperboard size={25} />
-
-//         {movieCount > 0 && (
-//           <span className="movie-count">
-//             {movieCount}
-//           </span>
-//         )}
-
-//       </Link>
-
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 
 
